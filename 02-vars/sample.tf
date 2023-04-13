@@ -12,6 +12,28 @@ output "sample_outpiut" {
 
 # A variable cann be accessed without ${} as well , if its not accompanied in any sentence. If you just want to use it, you can directly refer it as `var.VariableName`
 
-variable "sample" {
-    
+variable "integer" {
+    default = 1000
+}
+
+output "number"{
+    value = var.number
+}
+
+# List variable 
+
+variable "sample_list"{
+    default = [
+        "Terraform",
+        "Training",
+        "Pulumi",
+        "Cloud Formation",
+        120,
+        true,
+        "Aman"
+    ]
+}
+#From the above list block, data in that block can be of any type
+output "sample_list_op" {
+    value =  "Welcome to ${var.sample_list[0]} Training and duration of the training is ${var.sample_list[4]} housrs"
 }
