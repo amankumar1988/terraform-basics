@@ -73,8 +73,8 @@ output "state_name_op" {
 
 # This vairable will be supplied fromt from CL
 
-variable "Cournty"{}
+variable "Country"{}
 
-output "Cournty_name" {
-    value = "Name of country name is ${var.Cournty}"
+output "Country_name" {
+    value = "Name of country name is ${var.Country}"
 }
