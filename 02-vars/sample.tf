@@ -56,5 +56,9 @@ output "sample_map_op" {
 variable "city" {}
 
 output "city_name_op"{
-    value = "Name of the city ${var.city}"
+    value = var.city
+}
+
+output "city_name_op_1"{
+    value = "Name of the city is ${var.city}"
 }
