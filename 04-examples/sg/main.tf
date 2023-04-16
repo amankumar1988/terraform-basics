@@ -27,5 +27,5 @@ resource "aws_security_group" "allow_ssh" {
 # Declate the SG ID
 
 output "sg" {
-    value =   "aws_security_group.allow_ssh"
+    value =   "aws_security_group.allow_ssh.id"
 }
