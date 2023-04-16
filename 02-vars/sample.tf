@@ -55,6 +55,6 @@ output "sample_map_op" {
 #Declaring an empty variable
 variable "city" {}
 
-output "city_name"{
+output "city_name_op"{
     value = var.city
 }
