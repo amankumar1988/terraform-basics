@@ -14,6 +14,6 @@ variable "sg" {}
 
 # Print attribute
 
-output "private_dns_of_Server" {
+output "private_dns" {
     value = aws_instance.web.private_dns
 }
