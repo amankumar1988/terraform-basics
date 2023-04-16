@@ -1,6 +1,6 @@
 # Create security group
 
-resource "aws_security_group" "allow_ssh_2" {
+resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow SSH inbound traffic"
 
@@ -27,5 +27,5 @@ resource "aws_security_group" "allow_ssh_2" {
 # Declate the SG ID
 
 output "sg" {
-    value =   "aws_security_group.allow_ssh_2.id"
+    value =   "aws_security_group.allow_ssh.id"
 }
