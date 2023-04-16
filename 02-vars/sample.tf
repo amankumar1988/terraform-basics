@@ -63,7 +63,9 @@ output "city_name_op_1"{
     value = "Name of the city is ${var.city}"
 }
 
-variable "state" {}
+variable "state" {
+    value = "AP"
+}
 
 output "state_name_op" {
     value = "Name of state is ${var.state}"
