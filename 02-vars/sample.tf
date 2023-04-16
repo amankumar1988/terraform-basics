@@ -64,7 +64,7 @@ output "city_name_op_1"{
 }
 
 variable "state" {
-    value = "AP"
+    value = "Andhra Pradesh"
 }
 
 output "state_name_op" {
