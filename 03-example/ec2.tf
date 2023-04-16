@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
   instance_type             = "t3.nano"
 
   tags = {
-    Name        = "Terraform-Instance-Server-Name"
+    Name        = "Terraform-Instance-Server-Name-2"
   }
 }
 
