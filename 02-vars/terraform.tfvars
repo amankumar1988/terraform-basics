@@ -1,1 +1,2 @@
 city = "Banglore"
+state = "Karnataka"
