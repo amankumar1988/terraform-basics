@@ -70,3 +70,11 @@ variable "state" {
 output "state_name_op" {
     value = "Name of state is ${var.state}"
 }
+
+# This vairable will be supplied fromt from CL
+
+variable "Cournty"{}
+
+output "Cournty_name" {
+    value = "Name of country name is ${Cournty_name}"
+}
