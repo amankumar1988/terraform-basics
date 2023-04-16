@@ -76,5 +76,5 @@ output "state_name_op" {
 variable "Cournty"{}
 
 output "Cournty_name" {
-    value = "Name of country name is ${Cournty_name}"
+    value = "Name of country name is ${Cournty}"
 }
