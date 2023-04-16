@@ -1,11 +1,10 @@
-#Declaring the module with the name ec2
+# Declaring a module with the name ec2
 module "ec2" {
-   source =        "./ec2"
-   sg     =         module.sg.sg_id
+    source  =   "./ec2"
+    sg      =   module.sg.sg_id
 }
 
-
-#Declaring the module with the name ecsg2
+# Declaring a module with the name sg
 module "sg" {
-   source =         "./sg"
+    source  =   "./sg"
 }
