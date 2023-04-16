@@ -2,7 +2,7 @@
 resource "aws_instance" "web" {
   ami                       = "ami-007fbb30bb8ade45b"
   instance_type             = "t3.micro"
-  vpc_security_group_ids    = [var.sg]
+  vpc_security_group_ids    = [var.sg_id]
 
   tags = {
     Name        = "Terraform-Instance-Server-Name"
@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
 }
 
 
-variable "sg" {}
+variable "sg_id" {}
 
 # Print attribute
 
