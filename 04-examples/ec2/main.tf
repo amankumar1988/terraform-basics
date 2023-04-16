@@ -12,7 +12,7 @@ resource "aws_instance" "web" {
 
 variable "sg" {}
 
-Print attribute
+# Print attribute
 
 output "private_dns_of_Server" {
     value = aws_instance.web.private_dns
