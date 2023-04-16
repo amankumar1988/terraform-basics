@@ -5,7 +5,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids    = [var.sg]
 
   tags = {
-    Name        = "Terraform-Instance-Server-Name-2"
+    Name        = "Terraform-Instance-Server-Name"
   }
 }
 
