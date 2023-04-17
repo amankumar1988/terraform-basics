@@ -7,9 +7,10 @@ resource "aws_instance" "web" {
   tags = {
     Name        = "Terraform-Instance-Server-Name"
   }
-}
+
 # Declaring the remote provisioner inside the resource
   provisioner "remote-exec" {
+
     connection {                  // establishes connectivity to the created machine
     type     = "ssh"
     user     = "centos"
@@ -21,7 +22,7 @@ resource "aws_instance" "web" {
       "ansible-pull -U https://github.com/amankumar1988/ansible.git robot-pull.yaml -e ENV=dev -e COMPONENT=mongodb"
     ]
   }
-
+}
 
 variable "sg" {}
 
