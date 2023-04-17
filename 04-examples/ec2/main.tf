@@ -8,7 +8,13 @@ resource "aws_instance" "web" {
     Name        = "Terraform-Instance-Server-Name"
   }
 }
-
+# Declaring the remote provisioner inside the resource
+  provisioner "remote-exec" {
+    inline = [
+      "puppet apply",
+      "consul join ${aws_instance.web.private_ip}",
+    ]
+  }
 
 variable "sg" {}
 
@@ -17,3 +23,5 @@ variable "sg" {}
 output "private_dns" {
     value = aws_instance.web.private_dns
 }
+
+
