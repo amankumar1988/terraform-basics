@@ -105,3 +105,12 @@ IP Address as classified in to classes based on their usage :
 Ref : https://github.com/coretech/terrafile
 
 Terrafile is going to clone the backend module repo from the mentioned branch and keeps it local to the machine where you're dexecuting the terraform command
+
+
+### How to create infra by supplying the backend config from a seaparte folder
+
+terraform init -backend-config=env-dev/dev-backend.tfvars
+
+terraform plan -var-file=env-dev/dev-backend.tfvars
+
+terraform apply -auto-approve -var-file=env-dev/dev.tfvars
