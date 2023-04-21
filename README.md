@@ -116,3 +116,16 @@ terraform init -backend-config=env-dev/dev-backend.tfvars
 terraform plan -var-file=env-dev/dev-backend.tfvars
 
 terraform apply -auto-approve -var-file=env-dev/dev.tfvars
+
+# Four subnets
+
+Dev:
+10.0.0.0/26 & 10.0.0.64/26
+10.0.0.128/26 & 10.0.0.192/26
+
+Prod:
+10.1.0.0/24 & 10.1.1.0/24
+10.1.2.0/24 & 10.1.3.0/24
+
+### Count 
+Whenever you want to execute some block of terrafomr code n nnumber of times , you can use count
