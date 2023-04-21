@@ -104,6 +104,8 @@ IP Address as classified in to classes based on their usage :
 
 Ref : https://github.com/coretech/terrafile
 
+curl -L https://github.com/coretech/terrafile/releases/download/v0.6/terrafile_0.6_Linux_x86_64.tar.gz |sudo  tar xz -C /usr/local/bin
+
 Terrafile is going to clone the backend module repo from the mentioned branch and keeps it local to the machine where you're dexecuting the terraform command
 
 
