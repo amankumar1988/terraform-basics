@@ -100,3 +100,6 @@ IP Address as classified in to classes based on their usage :
     2) Router is a device which helps in estbalishing connectivity between two different networks. In AWS, we call the similar device as IGW which is a software component and we can attach one IGW per VPC.
     3) Network peering is used to establish private communication between 2 differnt VPC with in the region / other-region, with in the account or outsode the account.
 
+### How to install terrafile
+
+Ref : https://github.com/coretech/terrafile
