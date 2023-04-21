@@ -103,3 +103,5 @@ IP Address as classified in to classes based on their usage :
 ### How to install terrafile
 
 Ref : https://github.com/coretech/terrafile
+
+Terrafile is going to clone the backend module repo from the mentioned branch and keeps it local to the machine where you're dexecuting the terraform command
